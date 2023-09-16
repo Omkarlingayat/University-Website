@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>About Course</title>
+        <link rel="stylesheet" href="sytle.css">
+        <!--<link href="bootstrap.min.css" rel="stylesheet" />
+        --><link href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous"/>
+        <script src="https://kit.fontawesome.com/6d05d7d959.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+<!------------------------------ header --------------------------->
+        <!--<script  src="JavaScript.js"></script>-->
+        <section class="sub-header">
+            <nav>
+                <a href="index.html">
+                    <img src="img/logo.png">
+                </a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-window-close" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="Index.html">HOME</a></li>
+                        <li><a href="AboutUs.html">ABOUT</a></li>
+                        <li><a href="Course.html">COURSE</a></li>
+                        <li><a href="Blog.html">BLOG</a></li>
+                        <li><a href="ContactUs.html">CONTACT</a></li>
+                        <li><a href="Login1.html">Login</a></li>
+                     </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i> 
+             </nav>
+             <h1>Our Courses</h1>
+        </section>
+
+<!-- ------------------------- Course------------------------->
+<section class="course">
+    <h1>Courses We Offer</h1>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    </p>
+    
+    <div class="row">
+        <div class="course-col">
+            <h3>Intermediate</h3>
+            <p>Lorem ipsum sit amet, consectetur adipiscing elit.
+                pallentesque aliquet turpis nulla, eleifend faucibus easiest
+                sollicitudin ut. Maecens ut venenatis ex, et dapibus purus donec sit.
+            </p>
+        </div>
+        <div class="course-col">
+            <h3>Degree</h3>
+            <p>Lorem ipsum sit amet, consectetur adipiscing elit.
+                pallentesque aliquet turpis nulla, eleifend faucibus easiest
+                sollicitudin ut. Maecens ut venenatis ex, et dapibus purus donec sit.
+            </p>
+        </div>
+        <div class="course-col">
+            <h3>Post Graduation</h3>
+            <p>Lorem ipsum sit amet, consectetur adipiscing elit.
+                pallentesque aliquet turpis nulla, eleifend faucibus easiest
+                sollicitudin ut. Maecens ut venenatis ex, et dapibus purus donec sit.
+            </p>
+        </div>
+    </div>
+
+</section>
+
+<!---------------------------- Our Facilites----------------------->
+<section>
+    <div class="facilites">
+        <h1>Our facilites</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <div class="row">
+            <div class="facilites-col">
+                <img src="img/library.png">
+                <h3>World Class library</h3>
+                <p>Lorem ipsum sit amet, consectetur adipiscing elit.
+                pallentesque aliquet turpis nulla.</p>
+            </div>
+
+            <div class="facilites-col">
+                <img src="img/basketball.png">
+                <h3>Largest Play Ground</h3>
+                <p>Lorem ipsum sit amet, consectetur adipiscing elit.
+                pallentesque aliquet turpis nulla.</p>
+            </div>
+
+            <div class="facilites-col">
+                <img src="img/cafeteria.png">
+                <h3>Tasty & Healthy Food</h3>
+                <p>Lorem ipsum sit amet, consectetur adipiscing elit.
+                pallentesque aliquet turpis nulla.</p>
+            </div>
+
+        </div>        
+    </div>
+</section>
+
+
+<!--------------------------------------- footer ----------------------------->
+        <section class="footer">
+            <h4>About Us</h4>
+            <p>Lorem ipsum sit amet, consectetur adipiscing elit.
+                pallentesque aliquet turpis nulla, eleifend faucibus est<br>
+            sollicitudin ut. Maecens ut venenatis ex, et dapibus purus</p>
+            <div class="icons_">
+                <i class="fa-brands fa-square-facebook"></i>
+                <i class="fa-brands fa-square-twitter"></i>
+                <i class="fa-brands fa-square-instagram"></i>
+                <i class="fa-brands fa-linkedin"></i>
+            </div>
+        </section>
+
+<!------------------------ Java Script for toggle menu---------------->
+        <script>
+            var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";    
+        }
+        </script>
+
+    </body>
+</html>

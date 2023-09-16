@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact Us</title>
+        <link rel="stylesheet" href="sytle.css">
+        <!--<link href="bootstrap.min.css" rel="stylesheet" />
+        --><link href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous"/>
+        <script src="https://kit.fontawesome.com/6d05d7d959.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <!--<script  src="JavaScript.js"></script>-->
+        <section class="sub-header">
+            <nav>
+                <a href="index.html">
+                    <img src="img/logo.png">
+                </a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-window-close" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="Index.html">HOME</a></li>
+                        <li><a href="AboutUs.html">ABOUT</a></li>
+                        <li><a href="Course.html">COURSE</a></li>
+                        <li><a href="Blog.html">BLOG</a></li>
+                        <li><a href="ContactUs.html">CONTACT</a></li>
+                        <li><a href="Login1.html">Login</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i> 
+             </nav>
+             <h1>Contact Us</h1>
+        </section>
+
+<!---------------------------------- Contact Us -------------------->
+<section class="location">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3782.466992442824!2d73.82435381436922!3d18.552973473025876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2bf0eed1beca7%3A0xf07ab6b613c2af51!2sSavitribai%20Phule%20Pune%20University!5e0!3m2!1sen!2sin!4v1670398232392!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+    <div class="contact">
+        <div class="row">
+            <div class="contact-col">
+                <div>
+                    <i class="fa-solid fa-house-chimney"></i>
+                    <span>
+                        <h5>GaneshKhind Road, GaneshKhind</h5>
+                        <p>Pune, Maharashtra 411007</p>    
+                    </span>    
+                </div>
+                <div>
+                    <i class="fa-solid fa-phone"></i>
+                    <span>
+                        <h5>020 7153 3633</h5>
+                        <p>Monday to Friday 10am to 6pm</p>
+                    </span>    
+                </div>
+                <div>
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>
+                        <h5>SavitribaiUniversity@12gmail.com</h5>
+                        <p>Email us your query</p>
+                    </span>
+                </div>
+            </div>
+
+            <div class="contact-col">
+                <form class="msg" action="https://formsubmit.co/lingayatomkar52@gmail.com" method="post" name="suForm" id="supform">
+                    <input type="text" name="name" placeholder="Enter your name">
+                    <input type="text" name="email" placeholder="Enter email address">
+                    <input type="text" name="subject" placeholder="Enter your subject">
+                    <textarea rows="5" name="message" placeholder="Message"></textarea>
+                    <button type="submit" class="hero-btn" id="submit-btn" onmouseover="mouseOver()">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!------------------------------ footer  --------------------------------->
+        <section class="footer">
+            <h4>About Us</h4>
+            <p>Lorem ipsum sit amet, consectetur adipiscing elit.
+                pallentesque aliquet turpis nulla, eleifend faucibus est<br>
+            sollicitudin ut. Maecens ut venenatis ex, et dapibus purus</p>
+            <div class="icons_">
+                <i class="fa-brands fa-square-facebook"></i>
+                <i class="fa-brands fa-square-twitter"></i>
+                <i class="fa-brands fa-square-instagram"></i>
+                <i class="fa-brands fa-linkedin"></i>
+            </div>
+        </section>
+
+<!------------------------ Java Script for toggle menu---------------->
+        <script>
+            var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";    
+        }
+        </script>
+<!-- -------------------------------------------------------------              -->
+<script>
+
+    var a = 0;
+
+    function mouseOver(){
+        
+        const name = document.forms['suForm']['name'].value;
+        const email = document.forms['suForm']['email'].value;
+      <!-- // const pass = document.forms['suForm']['pass'].value;
+        //const tick = document.querySelector('#check');
+          //  -->
+        const emailCheck = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+
+
+
+        if((name == "" || !email.match(emailCheck)) && a==0){
+        buttonMoveLeft();
+        a = 1;
+        return false;
+        } 
+
+        if((name == "" || !email.match(emailCheck)) && a==1){
+        buttonMoveRight();
+        a = 2;
+        return false;
+        } 
+
+        if((name == "" || !email.match(emailCheck)) && a==2){
+        buttonMoveLeft();
+        a = 1;
+        return false;
+        } 
+
+        else{
+
+            // document.getElementById('submit-btn').click();  
+            document.getElementById('submit-btn').style.cursor = 'pointer';
+            return false;
+        };
+
+    };
+
+
+    
+
+    function buttonMoveLeft(){
+
+        const button = document.getElementById('submit-btn');
+        button.style.transform = 'translateX(160%)';
+
+    };
+
+
+    function buttonMoveRight(){
+
+        const button = document.getElementById('submit-btn');
+        button.style.transform = 'translateX(0%)';
+
+    };
+
+
+    function resetBtn(){
+        const button = document.getElementById('submit-btn');
+        button.style.transform = 'translateX(0%)';
+    };
+
+
+</script>
+
+    </body>
+</html>
